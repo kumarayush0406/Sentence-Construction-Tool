@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import { useQuiz } from "../context/QuizContext";
 
 const Timer = () => {
-  const { timeLeft, setTimeLeft, currentIndex, questions } = useQuiz();
+  const { timeLeft, setTimeLeft, currentIndex, questions, nextQuestion } =
+    useQuiz();
 
   useEffect(() => {
     const interval = setInterval(() => {
