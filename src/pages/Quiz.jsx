@@ -62,7 +62,7 @@ const Quiz = () => {
           <Progress total={questions.length} current={currentIndex + 1} />
           <button
             onClick={() => window.confirm("Quit quiz?") && navigate("/")}
-            className="ml-4 px-4 py-2  text-black rounded-lg hover:bg-red-600"
+            className="ml-4 px-4 py-2 border-1 border-grey-500  text-black rounded-lg hover:bg-red-600"
           >
             Quit
           </button>
